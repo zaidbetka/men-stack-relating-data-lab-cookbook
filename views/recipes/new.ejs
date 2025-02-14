@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>New Recipe</title>
+</head>
+<body>
+    <%- include('../partials/_navbar.ejs') %>
+
+    <h1>Add a New Recipe</h1>
+
+    <form action="/recipes" method="POST">
+        <label for="name">Recipe Name:</label>
+        <input type="text" name="name" required />
+      
+        <label for="instructions">Instructions:</label>
+        <textarea name="instructions"></textarea>
+      
+        <button type="submit">Create Recipe</button>
+      </form>
+      
+
+    <a href="/recipes">Back to Recipes</a>
+</body>
+</html>
